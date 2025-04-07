@@ -16,11 +16,13 @@
         if ($numero <= 0){
             echo "Número inválido!";
         }else{
+            $fatorial = 1;
             $i = $numero;
             while ($i > 0){
-                echo $numero * $i;
+                $fatorial *= $i;
                 $i--;
             }
+            echo "O fatorial de $numero é: $fatorial";
         }
         $numero = $_POST['numero'];
         
