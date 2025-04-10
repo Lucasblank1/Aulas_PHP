@@ -3,18 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercício 1 - Verificação de Número Positivo, Negativo ou Zero</title>
+    <title>Exercício 10- Identificação do mês correspondente a um número</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h2>Exercício 1 <p></p>- Verificação de Número Positivo, Negativo ou Zero</h2>
-    <p> 1- Verificação de número positivo, negativo ou zero:</p>
-    <p> Enunciado: Desenvolva um algoritmo em PHP que receba, através de um formulário HTML, um número digitado pelo usuário e determine se o valor é positivo, negativo ou igual a zero. A resposta deve ser exibida no navegador em formato de mensagem.
-        Exemplo de saída: "Valor Positivo", "Valor Negativo" ou "Igual a Zero".
+    <h2>Exercício 10 <p></p>- Identificação do mês correspondente a um número</h2>
+    <p> 10-Identificação do mês correspondente a um número:</p>
+    <p> Enunciado: Crie um algoritmo em PHP que receba, por meio de um formulário HTML, um número inteiro entre 1 e 
+        12 e exiba o nome do mês correspondente a esse número. Caso o número seja fora do intervalo, o sistema deve 
+        informar que não existe mês com esse número.
      <p>-------------------------------------</p>
      <p>Passos a seguir:</p>
-     <p>Crie um formulário HTML aqui que envie o número para o backend PHP via método POST.</p>
-     <p>Lembre-se: form action="Exercicio1.php" method="post" </p>
-     <p>O PHP deve processar a entrada e exibir o resultado na mesma página ou em uma página separada.</p>
+     <p>Crie um formulário HTML que receba um número de 1 a 12. </p>
+     <p>O PHP deve usar switch para exibir o nome do mês correspondente ou informar que o número não é válido.</p>
      <p>--------------------------------------</p>
+
+     <form  name="mes" action="Exercicio10.php" method="post">
+
+        <label for="numero">Digite um número de 1 a 12 para saber o mês correspondente:</label>
+        <input type="number" name="numero" id="numero" required><br><br>
+        <input type="submit" value="Enviar">
+        </form>
+        <br><br>
+        <a href="index.html"><button>🏠 Início</button></a>
+
+        <button onclick="history.back()">
+            🔙 Voltar
+        </button>
+
 </body>
 </html>

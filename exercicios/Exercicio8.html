@@ -3,18 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercício 1 - Verificação de Número Positivo, Negativo ou Zero</title>
+    <title>Exercício 8 - Cálculo da média final de um aluno SGA</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h2>Exercício 1 <p></p>- Verificação de Número Positivo, Negativo ou Zero</h2>
-    <p> 1- Verificação de número positivo, negativo ou zero:</p>
-    <p> Enunciado: Desenvolva um algoritmo em PHP que receba, através de um formulário HTML, um número digitado pelo usuário e determine se o valor é positivo, negativo ou igual a zero. A resposta deve ser exibida no navegador em formato de mensagem.
-        Exemplo de saída: "Valor Positivo", "Valor Negativo" ou "Igual a Zero".
+    <h2>Exercício 8 <p></p>- Cálculo da média final de um aluno SGA</h2>
+    <p> 8- Cálculo da média final de um aluno SGA:</p>
+    <p> Enunciado:Crie um algoritmo em PHP que receba três notas de um aluno via formulário HTML. As notas devem ser 
+        armazenadas em um array e a média final calculada. O sistema deve exibir a média e a situação do aluno: 
+        "Aprovado" (média ≥ 7) ou "Reprovado" (média < 7). Considere o sistema de notas do SGA: 
+        ((A1*2)+(A2*2)+(A3*1))/5
      <p>-------------------------------------</p>
      <p>Passos a seguir:</p>
-     <p>Crie um formulário HTML aqui que envie o número para o backend PHP via método POST.</p>
-     <p>Lembre-se: form action="Exercicio1.php" method="post" </p>
-     <p>O PHP deve processar a entrada e exibir o resultado na mesma página ou em uma página separada.</p>
+     <p>Crie um formulário HTML com três campos para as notas.</p>
+     <p>O PHP deve calcular a média e exibir a situação do aluno no navegador.</p>
      <p>--------------------------------------</p>
+    
+     <form name="media" action="Exercicio8.php" method="post">
+        <label for="nota1">1ª Nota:</label>
+        <input type="number" name="nota1" id="nota1" step="0.01" required><br><br>
+       
+        <label for="nota2">2ª Nota:</label>
+        <input type="number" name="nota2" id="nota2" step="0.01" required><br><br>
+    
+        <label for="nota3">3ª Nota:</label>
+        <input type="number" name="nota3" id="nota3" step="0.01" required><br><br>
+        
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Apagar">
+    </form>
+    <br><br>
+    <a href="index.html"><button>🏠 Início</button></a>
+
+    <button onclick="history.back()">
+        🔙 Voltar
+    </button>
+    
 </body>
 </html>

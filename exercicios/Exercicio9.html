@@ -3,18 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercício 1 - Verificação de Número Positivo, Negativo ou Zero</title>
+    <title>Exercício 9 - Verificação de maioridade</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h2>Exercício 1 <p></p>- Verificação de Número Positivo, Negativo ou Zero</h2>
-    <p> 1- Verificação de número positivo, negativo ou zero:</p>
-    <p> Enunciado: Desenvolva um algoritmo em PHP que receba, através de um formulário HTML, um número digitado pelo usuário e determine se o valor é positivo, negativo ou igual a zero. A resposta deve ser exibida no navegador em formato de mensagem.
-        Exemplo de saída: "Valor Positivo", "Valor Negativo" ou "Igual a Zero".
+    <h2>Exercício 9<p></p>- Verificação de maioridade</h2>
+    <p> 9- Verificação de maioridade:</p>
+    <p> Enunciado: Desenvolva um algoritmo em PHP que receba, via formulário HTML, o nome e a idade de um usuário. O 
+        sistema deve verificar se o usuário é maior ou menor de 18 anos e exibir uma mensagem personalizada no formato: 
+        "Fulano é maior de 18 e tem XX anos" ou "Fulano não é maior de 18 e tem XX anos". 
      <p>-------------------------------------</p>
      <p>Passos a seguir:</p>
-     <p>Crie um formulário HTML aqui que envie o número para o backend PHP via método POST.</p>
-     <p>Lembre-se: form action="Exercicio1.php" method="post" </p>
-     <p>O PHP deve processar a entrada e exibir o resultado na mesma página ou em uma página separada.</p>
-     <p>--------------------------------------</p>
+     <p>Crie um formulário HTML para a entrada do nome e da idade. </p>
+     <p>O PHP deve processar a verificação e exibir a mensagem correspondente.</p>
+     <p>--------------------------------------</p> 
+
+     <form name="idade" action="Exercicio9.php" method="post">
+
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" id="nome" required>
+       
+        <label for="idade">Idade:</label>
+        <input type="number" name="idade" id="idade" required>
+        
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Apagar">
+
+    </form>
+    <br><br>
+    <a href="index.html"><button>🏠 Início</button></a>
+
+    <button onclick="history.back()">
+        🔙 Voltar
+    </button>
+    
 </body>
 </html>

@@ -29,5 +29,9 @@
 
     
     ?>
+<br><br>
+<a href="index.html"><button>🏠 Início</button></a>
+<button onclick="history.back()">🔙 Voltar</button>
+
 </body>
 </html>

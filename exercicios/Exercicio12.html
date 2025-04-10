@@ -3,18 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercício 1 - Verificação de Número Positivo, Negativo ou Zero</title>
+    <title>Exercício 12 - Realizando Buscas e Exclusão de Registros no Banco de Dados com PHP</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h2>Exercício 1 <p></p>- Verificação de Número Positivo, Negativo ou Zero</h2>
-    <p> 1- Verificação de número positivo, negativo ou zero:</p>
-    <p> Enunciado: Desenvolva um algoritmo em PHP que receba, através de um formulário HTML, um número digitado pelo usuário e determine se o valor é positivo, negativo ou igual a zero. A resposta deve ser exibida no navegador em formato de mensagem.
-        Exemplo de saída: "Valor Positivo", "Valor Negativo" ou "Igual a Zero".
-     <p>-------------------------------------</p>
+    <h2>Exercício 12 <p></p>- Realizando Buscas e Exclusão de Registros no Banco de Dados com PHP</h2>
+    <p> 12- Realizando Buscas e Exclusão de Registros no Banco de Dados com PHP:</p>
+    <p> Nesta tarefa, o objetivo é utilizar o PHP para realizar operações de busca (SELECT) e exclusão (DELETE) de registros 
+        no banco de dados. A atividade será dividida em duas partes. Na primeira, será feito um sistema de busca no banco 
+        de dados para localizar registros de alunos a partir de informações como nome, matrícula, ou e-mail institucional. Na segunda parte, você deve implementar a funcionalidade de exclusão de registros com base em critérios específicos.
+     <p>------------------------------------------------------------------------------------------------------------------------------------------------------</p>
      <p>Passos a seguir:</p>
      <p>Crie um formulário HTML aqui que envie o número para o backend PHP via método POST.</p>
      <p>Lembre-se: form action="Exercicio1.php" method="post" </p>
      <p>O PHP deve processar a entrada e exibir o resultado na mesma página ou em uma página separada.</p>
-     <p>--------------------------------------</p>
+     <p>------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+
+     <form name="pesquisa" action="Exercicio12.php" method="post">
+        <label>Busca de alunos:</label>
+
+        <label for="nome">Nome Do Aluno:</label>
+        <input type="text" name="nome" id="nome">
+        
+        <label for="matricula">Matrícula</label>
+        <input type="number" name="matricula" id="matricula">
+        
+        <label for="email">E-mail institucional:</label>
+        <input type="text" name="email" id="email">
+        
+        <input type="submit" name="Enviar" value="Buscar">
+    </form>
+    <a href="excluir.html"><button>Excluir registro</button></a>
+    <div class="botoes">
+        <a href="index.html" class="botao">🏠 Início</a>
+        <button onclick="history.back()" class="botao">🔙 Voltar</button>
+    </div>
+    
 </body>
 </html>

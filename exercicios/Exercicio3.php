@@ -19,14 +19,23 @@
             $fatorial = 1;
             $i = $numero;
             while ($i > 0){
+                if ($i > 1) {
+                    echo "$i x ";
+                } else {
+                    echo "$i: $fatorial ";
+                }
                 $fatorial *= $i;
                 $i--;
             }
-            echo "O fatorial de $numero é: $fatorial";
+           
         }
         $numero = $_POST['numero'];
         
     
     ?>
+<br><br>
+<a href="index.html"><button>🏠 Início</button></a>
+<button onclick="history.back()">🔙 Voltar</button>
+
 </body>
 </html>
