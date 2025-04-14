@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 11 - Cadastro de Alunos e Carga Horária para Atividades Complementares </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h2>Exercício 11<p></p>- Cadastro de Alunos e Carga Horária para Atividades Complementares </h2>
+    <p> 11- Cadastro de Alunos e Carga Horária para Atividades Complementares :</p>
+    <p> Enunciado: O objetivo desta tarefa é desenvolver um sistema simples de cadastro de alunos utilizando HTML e PHP, com a 
+        capacidade de registrar e gerenciar informações relacionadas a atividades complementares. O sistema deve permitir 
+        o cadastro de dados dos alunos em um banco de dados MySQL, bem como a inserção e atualização da carga horária 
+        referente às atividades complementares. Os alunos deverão ser identificados por meio de sua matrícula, e a carga 
+        horária poderá ser atualizada conforme forem realizadas mais atividades.</p>
+     <p>------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+     
+     <h1>Formulário de cadastro</h1>
+    <form name="cadastro" action="Exercicio11.php" method="post">
+        <label for="nome">Nome Do Aluno:</label>
+        <input type="text" name="nome" id="nome" ><br><br>
+
+        <label for="matricula">Matrícula</label>
+        <input type="number" name="matricula" id="matricula" ><br><br>
+
+        <label for="curso">Curso:</label>
+        <input type="text" name="curso" id="curso" ><br><br>
+
+        <label for="email">E-mail institucional:</label>
+        <input type="text" name="email" id="email" ><br><br>
+
+        <label for="telefone">Telefone:</label>
+        <input type="number" name="telefone" id="telefone" ><br><br>
+        
+        <label for="endereco">Endereço:</label>
+        <input type="text" name="endereco" id="endereco" ><br><br>
+
+        <label for="cep">CEP:</label>
+        <input type="number" name="cep" id="cep" ><br><br>
+
+        <label for="cidade">Cidade:</label>
+        <input type="text" name="cidade" id="cidade" ><br><br>
+
+        <label for="uf">UF:</label>
+        <input type="text" name="uf" id="uf" ><br><br>
+
+        <label for="cursoHC">Curso para horas complementares:</label>
+        <input type="text" name="curso_horas" id="curso_horas" ><br><br>
+
+        <label for="cargahoraria">Carga-Horaria:</label>
+        <input type="number" name="carga_horaria" id="carga_horaria" ><br><br>
+
+       <input type="submit" value="Enviar"/>
+       <input type="reset" value="Limpar" name="botao"/>
+
+    </form>
+    <a href="att_carga.html"><button>Atualizar carga horária</button></a>
+    <div class="botoes">
+        <a href="index.html" class="botao">🏠 Início</a>
+        <button onclick="history.back()" class="botao">🔙 Voltar</button>
+    </div>
+    
+    
+
+</body>
+</html>
